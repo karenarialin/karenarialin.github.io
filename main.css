@@ -1,0 +1,46 @@
+.page {
+	height: 1000px;
+	padding-left: 10px;
+	width: 100%;
+}
+
+#home-page {
+	background-color: #eeeeee;
+}
+
+#about-page {
+	background-color: #00ff7f;
+}
+
+.buffer {
+	height: 50px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+li {
+	display: inline;
+	float: left;
+	text-align: center;
+}
+
+#nav a {
+	display: block;
+	padding: 8px;
+	background-color: #dddddd;
+}
+
+
+#nav-container {
+	position: fixed;
+	margin-top: 0px;
+	padding: 10px;
+	height: 30px;
+}
+
+
