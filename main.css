@@ -1,46 +1,194 @@
-.page {
-	height: 1000px;
-	padding-left: 10px;
-	width: 100%;
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  font-family: "Palatino Linotype", "Georgia", "Raleway", "Garamond", "Cardo", serif; 
 }
 
-#home-page {
-	background-color: #eeeeee;
+
+.nav {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  width: 100%;
+  height: 50px;
+  
 }
 
-#about-page {
-	background-color: #00ff7f;
+.nav li {
+  font-family: inherit;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+  display: inline-block;
+  margin-right: 4px;
+}
+ 
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  transition: .3s background-color;
 }
 
-.buffer {
-	height: 50px;
+.nav-logo {
+    width: 40px;
+    height: 40px;
+    float: left;
+    background-image:url(images/gradsquirrel.jpg);
+    background-size: 100% 100%;
 }
+
+.nav-items {
+    float: right;
+    margin-right: 100px;
+}
+ 
+.nav a:hover {
+  color: #005f5f;
+}
+ 
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+
+
+
+#bottom-left {
+    width: 30%;
+    height: 500px;
+    margin: 5px 5px;
+    float: left;
+/*    border: 1px solid green;*/
+}
+
+#right-side {
+    float: right;
+    width: 65%;
+    margin: 5px 5px;
+    border: 1px solid red;
+    background-color: beige;
+    padding: 15px;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+footer {
+    clear: both;
+    background: #444;
+    padding: 4px;
+    color: white;
+    margin-top: 20px;
+}
+ 
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+ 
+  
+ 
+
+
+
 
 ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
+    margin: 0px 0px;
+    float: left;
+}
+
+
+
+.logo {
+    float: left;
+}
+
+
+
+
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+.body-container {
+    margin: 30px;
+}
+
+
+
+
+
+
+
+#main-page {
+    text-align: center;
+    height: 500px;
+    padding: 50px;
 }
 
 li {
-	display: inline;
-	float: left;
-	text-align: center;
+    list-style: none;
 }
 
-#nav a {
-	display: block;
-	padding: 8px;
-	background-color: #dddddd;
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
 }
 
+.work-pages {
+    min-height: 700px;
+    position: relative;
+    overflow: auto;
+}
 
-#nav-container {
-	position: fixed;
-	margin-top: 0px;
-	padding: 10px;
-	height: 30px;
+#work-link {
+    font-size: 30px;
+    margin: 10px auto;
+}
+
+.work-section {
+    position: absolute;
+    width: 95%;
+    padding: 15px;
+    box-sizing: border-box;
+    display: none;
+}
+
+#bottom-left ul {
+    padding-left: 0px;
+    margin-left: 35%;
+}
+
+#right-side ul {
+    padding-left: 0px;
+}
+
+#right-side li {
+    margin: 20px auto;
+    font-size: 30px;
 }
 
 
