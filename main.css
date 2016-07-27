@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background: #fff;
-  font-family: "Palatino Linotype", "Georgia", "Raleway", "Garamond", "Cardo", serif; 
+  font-family: 'Raleway', serif;
 }
 
 
@@ -38,9 +38,9 @@ body {
 
 .nav-logo {
     width: 40px;
-    height: 40px;
+    height: 35px;
     float: left;
-    background-image:url(images/gradsquirrel.jpg);
+    background-image:url(images/Personal_logo.gif);
     background-size: 100% 100%;
 }
 
@@ -62,7 +62,7 @@ body {
 
 
 #bottom-left {
-    width: 30%;
+    width: 25%;
     height: 500px;
     margin: 5px 5px;
     float: left;
