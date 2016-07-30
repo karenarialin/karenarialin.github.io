@@ -31,5 +31,13 @@ $(document).ready(function() {
         $(".work-section").hide();
 		$("#music").show();
 	})
+    
+    $(document).on('click', 'a', function(event){
+    event.preventDefault();
 
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+});
+    
 })
