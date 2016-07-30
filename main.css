@@ -184,7 +184,7 @@ h1 {
     font-size: 30px;
     margin: 0px 40px;
     display: inline-block;
-    
+    cursor: pointer;
 }
 
 .work-section {
@@ -228,6 +228,7 @@ p {
     width: 100%;
     text-align: center;
     margin: 20px 0;
+    
 }
 
 .work-links {
@@ -244,3 +245,30 @@ p {
     font-size: 0;
     line-height: 0
 }
+
+
+
+.intro-link {
+    
+    cursor: pointer;
+}
+
+.work-title {
+    cursor: pointer;
+}
+
+.work-title:hover {
+    color: #005f5f;
+}
+
+#work-link:hover {
+    color: #005f5f;
+}
+
+.intro-link:hover {
+    color: #005f5f;
+}
+
+
+
+
