@@ -10,13 +10,18 @@ body {
 
 .nav {
   list-style: none;
-  background-color: #444;
+/*
+  background-image: url(images/waterfall.JPG);
+  opacity: 0.2;
+  background-size: cover;
+*/
   text-align: center;
   padding: 0px;
   margin: 0;
   width: 100%;
   height: 50px;
   box-sizing: border-box;
+  background-color: #B8F39D;
 }
 
 .nav li {
@@ -31,16 +36,17 @@ body {
  
 .nav a {
   text-decoration: none;
-  color: #fff;
+  color: #004B23;
   display: inline-block;
-  transition: .3s; 
+  transition: .3s;
+  z-index: 99;
 }
 
 .nav-logo {
     width: 40px;
     height: 35px;
     float: left;
-    background-image:url(images/Personal_logo.gif);
+    background-image:url(images/Personal_logo_green.gif);
     background-size: 100% 100%;
 }
 
@@ -148,7 +154,12 @@ html {
 /*    border: 1px solid blue;*/
     top: 0;
     left: 0;
+/*
+    background-image: url(images/waterfall.JPG);
+    opacity: 0.1;
+    background-size: cover;
     
+*/
     
 }
 
@@ -172,6 +183,7 @@ h1 {
     text-align: center;
     font-size: 40px;
     margin-top: 20px;
+    color: #004B23;
 }
 
 .work-pages {
@@ -272,3 +284,14 @@ p {
 
 
 
+
+.nav img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    opacity: 0.3;
+    z-index: -1;
+    background-size: cover;
+    
+}
