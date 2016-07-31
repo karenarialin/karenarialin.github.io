@@ -77,7 +77,7 @@ body {
 
 #right-side {
     width: 85%;
-    background-color: beige;
+    background-color: #B8F39D;
     padding: 15px;
     margin: 0 auto;  
     position: relative;
@@ -197,6 +197,7 @@ h1 {
     margin: 0px 40px;
     display: inline-block;
     cursor: pointer;
+    color: #004B23;
 }
 
 .work-section {
@@ -294,4 +295,12 @@ p {
     z-index: -1;
     background-size: cover;
     
+}
+
+.button {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
 }
