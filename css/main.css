@@ -1,16 +1,32 @@
+html, head, body {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
 
+h1, h2, h3 {
+    font-family: 'Maitree', 'Amiko', serif;
+}
+
+
+* {
+   box-sizing: border-box;
+}
 
 body {
   margin: 0;
   padding: 0;
   background: #fff;
-  font-family: 'Raleway', serif;
+  font-family: 'Amiko', sans-serif;
   color: #004B23;
-  background: url(images/waterfall2.gif) no-repeat center center fixed; 
+/*
+  background: url(images/waterfall2.gif); 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+*/
 }
 
 
@@ -25,9 +41,10 @@ body {
   padding: 0px;
   margin: 0;
   width: 100%;
-  height: 50px;
-  box-sizing: border-box;
-  background-color: #B8F39D;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: fixed;
+    z-index: 99;
 }
 
 .nav li {
@@ -49,8 +66,8 @@ body {
 }
 
 .nav-logo {
-    width: 40px;
-    height: 35px;
+    width: 45px;
+    height: 40px;
     float: left;
     background-image:url(images/Personal_logo_green.gif);
     background-size: 100% 100%;
@@ -61,17 +78,12 @@ body {
     float: right;
     margin-right: 100px;
 }
+
+
  
-.nav a:hover {
-  color: #005f5f;
-    
-}
+
  
-.nav a.active {
-  background-color: #fff;
-  color: #444;
-  cursor: default;
-}
+
 
 
 
@@ -91,9 +103,6 @@ body {
     position: relative;
     
     
-    
-  
-  
 
 }
 
@@ -104,26 +113,17 @@ img {
 
 footer {
     width: 100%;
-    background: #8C96A4;
+    height: 100%;
     padding: 4px;
-    color: white;
-    margin-top: 20px;
-    position: absolute;
     bottom: 0;
     display: block;
-    height: 30px;
+    background: url(images/waterfall2.gif);
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 20px;
 }
  
-@media screen and (min-width: 600px) {
-  .nav li {
-    width: 120px;
-    border-bottom: none;
-    height: 50px;
-    line-height: 50px;
-    font-size: 1.4em;
-  }
- 
-  
+
  
 
 
@@ -139,19 +139,10 @@ ul {
 
 .logo {
     float: left;
-    margin-top: 7px;
+    margin-top: 10px;
     
 }
 
-
-
-
-
-html {
-    margin: 0;
-    padding: 0;
-    
-}
 
 
 
@@ -176,10 +167,6 @@ html {
 
 
 
-
-
-
-
 #main-page {
     text-align: center;
     height: 500px;
@@ -193,7 +180,6 @@ li {
 h1 {
     text-align: center;
     font-size: 60px;
-    margin-top: 20px;
     
 }
 
@@ -203,8 +189,9 @@ h1 {
     overflow: auto;
 }
 
-#work-link {
-    font-size: 30px;
+.work-link {
+    font-size: 40px;
+    font-family: 'Maitree', serif;
     margin: 0px 40px;
     display: inline-block;
     cursor: pointer;
@@ -212,11 +199,11 @@ h1 {
 }
 
 .work-section {
-    position: absolute;
-    width: 95%;
-    padding: 15px;
+    width: 100%;
     box-sizing: border-box;
     display: none;
+    margin: 0;
+    background-color: bisque;
 }
 
 #bottom-left ul {
@@ -241,11 +228,13 @@ h1 {
 
 .nav-wrapper {
     float: right;
+    margin-right: 70px;
+    padding-top: 10px;
 }
 
 p {
-    margin-bottom: 11px;
     font-size: 20px;
+    padding-bottom: 2px;
 }
 
 .about-img {
@@ -286,12 +275,8 @@ p {
     color: #005f5f;
 }
 
-#work-link:hover {
-    color: #005f5f;
-    -webkit-stroke-width: 5.3px;
-      -webkit-stroke-color: #FFFFFF;
-      -webkit-fill-color: #FFFFFF;
-      text-shadow: 1px 0px 20px #B8F39D;
+.work-link:hover {
+    text-decoration: underline;
 }
 
 .intro-link:hover {
@@ -348,23 +333,20 @@ a {
     text-align: center;
 }
 
-.nav-item:hover {
-    -webkit-stroke-width: 5.3px;
-      -webkit-stroke-color: #FFFFFF;
-      -webkit-fill-color: #FFFFFF;
-      text-shadow: 1px 0px 20px #8C96A4;
-    
-}
 
 a:hover {
-    -webkit-stroke-width: 5.3px;
-      -webkit-stroke-color: #FFFFFF;
-      -webkit-fill-color: #FFFFFF;
-      text-shadow: 1px 0px 20px #8C96A4;
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
 }
 
 
-
+.hover {
+    text-decoration: underline;
+}
+    
 
 
 .explore {
@@ -376,3 +358,135 @@ a:hover {
 }
 
 
+
+.landing {
+    text-align: center;
+    height: 710px;
+    width: 100%;
+    background-color: aquamarine;
+    padding: 150px 170px;
+    background: url(images/logo-pattern.gif);
+    background-size: cover;
+}
+
+
+
+.about {
+    text-align: center;
+    height: 100%;
+    background-color: floralwhite;
+    padding: 20px 120px;
+}
+
+
+
+.work-landing {
+    text-align: center;
+    height: 350px;
+    width: 100%;
+    background-color: aquamarine;
+    padding-top: 90px;
+    background: url(images/logo-pattern.gif);
+    background-size: cover;
+}
+
+.work-about {
+    text-align: center;
+    height: 100%;
+    background-color: white;
+    padding: 20px 120px;
+    margin: 0;
+}
+
+
+
+.work-1 {
+    text-align: center;
+    height: 100%;
+    background-color: pink;
+    padding: 20px 120px;
+
+}
+
+.work-2 {
+    text-align: center;
+    height: 100%;
+    background-color: white;
+    padding: 20px 120px;
+    margin: 0;
+}
+
+.work-3 {
+    text-align: center;
+    height: 100%;
+    background-color: pink;
+    padding: 20px 120px;
+
+}
+
+h2 {
+    font-size: 40px;
+}
+
+strong {
+    font-size: 20px;
+}
+
+.contact {
+    font-size: 20px;
+    margin: 0px 40px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+small {
+    margin-top: 20px;
+}
+
+.landing-description {
+    font-size: 35px;
+    font-family: 'Maitree', serif;
+}
+
+.work-logo {
+    width: 110px;
+    height: 100px;
+}
+
+.nav-item:active {
+    text-decoration: underline;
+}
+
+
+.obvious-links {
+    color: #7E0D59;
+}
+
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+}
+.work-about ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+.work-wrapper {
+    width: 75%;
+    margin: auto;
+}
+
+.work-4 {
+    
+    text-align: center;
+    height: 100%;
+    background-color: white;
+    padding: 20px 120px;
+
+
+}
