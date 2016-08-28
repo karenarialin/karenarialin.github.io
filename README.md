@@ -29,7 +29,7 @@ Deployed!
 
 The site still loaded my footer background picture slowly, so it was time to talk about mobile responsiveness, analytics, and browser caching. Fun stuff! Things people can't see but are just important.
 
-Mobile responsiveness: got rid of padding on left and right, used wrapper 75%-80%. Still looks unattractive, but at least it works. 
+Mobile responsiveness: got rid of padding on left and right, used wrapper 75%-80%. Still looks unattractive, but at least it works. Finished without making too many media queries. 
 
 
 

@@ -63,7 +63,7 @@ body {
     float: left;
     background-image:url(images/Personal_logo_green.gif);
     background-size: 100% 100%;
-    margin-left: 20px;
+    margin-left: 10px;
     
 }
 
@@ -161,7 +161,7 @@ h1 {
 
 .nav-wrapper {
     float: right;
-    margin-right: 70px;
+    margin-right: 10px;
     padding-top: 10px;
 }
 
