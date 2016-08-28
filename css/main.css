@@ -3,6 +3,7 @@ html, head, body {
     margin: 0px;
     width: 100%;
     height: 100%;
+/*    font-size: 62.5%;*/
 }
 
 h1, h2, h3 {
@@ -20,13 +21,6 @@ body {
   background: #fff;
   font-family: 'Amiko', sans-serif;
   color: #004B23;
-/*
-  background: url(images/waterfall2.gif); 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-*/
 }
 
 
@@ -48,11 +42,9 @@ body {
 }
 
 .nav li {
-  font-family: inherit;
-  font-size: 1.2em;
+  font-size: 24px;
   line-height: 40px;
   height: 40px;
-  border-bottom: 1px solid #888;
   display: inline-block;
   margin-right: 4px;
 }
@@ -71,6 +63,7 @@ body {
     float: left;
     background-image:url(images/Personal_logo_green.gif);
     background-size: 100% 100%;
+    margin-left: 20px;
     
 }
 
@@ -79,32 +72,6 @@ body {
     margin-right: 100px;
 }
 
-
- 
-
- 
-
-
-
-
-#bottom-left {
-    width: 25%;
-    height: 500px;
-    margin: 5px 5px;
-    float: left;
-/*    border: 1px solid green;*/
-}
-
-#right-side {
-    width: 85%;
-    background-color: #93E0F1;
-    padding: 15px;
-    margin: 0 auto;  
-    position: relative;
-    
-    
-
-}
 
 img {
     max-height: 100%;
@@ -122,11 +89,6 @@ footer {
     text-align: center;
     padding-bottom: 20px;
 }
- 
-
- 
-
-
 
 
 ul {
@@ -142,12 +104,6 @@ ul {
     margin-top: 10px;
     
 }
-
-
-
-
-
-
 
 
 .body-container {
@@ -166,12 +122,6 @@ ul {
 }
 
 
-
-#main-page {
-    text-align: center;
-    height: 500px;
-    padding: 50px;
-}
 
 li {
     list-style: none;
@@ -205,23 +155,6 @@ h1 {
     margin: 0;
     background-color: bisque;
 }
-
-#bottom-left ul {
-    padding-left: 0px;
-    margin-left: 35%;
-}
-
-#right-side ul {
-    padding-left: 0px;
-}
-
-#right-side li {
-    margin: 20px auto;
-    font-size: 30px;
-}
-
-
-
 
 
 
@@ -291,17 +224,6 @@ p {
 
 
 
-.nav img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    opacity: 0.3;
-    z-index: -1;
-    background-size: cover;
-    
-}
-
 .button {
     text-decoration: none;
 }
@@ -316,22 +238,7 @@ a {
     position: relative;
 }
 
-.template {
-    color: aquamarine;
-    height: auto;
-}
 
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
-}
-
-.contact-side {
-    text-align: center;
-}
 
 
 a:hover {
@@ -349,22 +256,12 @@ a:active {
     
 
 
-.explore {
-    font-size: 30px;
-}
-
-.byline {
-    font-size: 40px;
-}
 
 
 
 .landing {
     text-align: center;
-    height: 710px;
-    width: 100%;
-    background-color: aquamarine;
-    padding: 150px 170px;
+    padding: 150px 0px;
     background: url(images/logo-pattern.gif);
     background-size: cover;
 }
@@ -375,16 +272,15 @@ a:active {
     text-align: center;
     height: 100%;
     background-color: floralwhite;
-    padding: 20px 120px;
+    padding: 20px 0px;
 }
 
 
 
 .work-landing {
     text-align: center;
-    height: 350px;
+    height: 100%;
     width: 100%;
-    background-color: aquamarine;
     padding-top: 90px;
     background: url(images/logo-pattern.gif);
     background-size: cover;
@@ -394,7 +290,7 @@ a:active {
     text-align: center;
     height: 100%;
     background-color: white;
-    padding: 20px 120px;
+    padding: 20px 0px;
     margin: 0;
 }
 
@@ -404,7 +300,7 @@ a:active {
     text-align: center;
     height: 100%;
     background-color: pink;
-    padding: 20px 120px;
+    padding: 20px 0px;
 
 }
 
@@ -412,7 +308,7 @@ a:active {
     text-align: center;
     height: 100%;
     background-color: white;
-    padding: 20px 120px;
+    padding: 20px 0px;
     margin: 0;
 }
 
@@ -420,7 +316,7 @@ a:active {
     text-align: center;
     height: 100%;
     background-color: pink;
-    padding: 20px 120px;
+    padding: 20px 0px;
 
 }
 
@@ -433,7 +329,7 @@ strong {
 }
 
 .contact {
-    font-size: 20px;
+    font-size: 30px;
     margin: 0px 40px;
     display: inline-block;
     cursor: pointer;
@@ -462,15 +358,8 @@ small {
     color: #7E0D59;
 }
 
-@media screen and (min-width: 600px) {
-  .nav li {
-    width: 120px;
-    border-bottom: none;
-    height: 50px;
-    line-height: 50px;
-    font-size: 1.4em;
-  }
-}
+
+
 .work-about ul, li {
     margin: 0;
     padding: 0;
@@ -482,11 +371,24 @@ small {
 }
 
 .work-4 {
-    
     text-align: center;
     height: 100%;
     background-color: white;
     padding: 20px 120px;
 
 
+}
+
+
+
+.landing-wrapper {
+    width: 85%;
+    margin: auto;
+}
+
+@media screen and (min-width: 600px) {
+  .nav li {
+    height: 50px;
+    width: 120px;
+  }
 }
