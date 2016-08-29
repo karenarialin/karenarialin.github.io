@@ -31,6 +31,7 @@ The site still loaded my footer background picture slowly, so it was time to tal
 
 Mobile responsiveness: got rid of padding on left and right, used wrapper 75%-80%. Still looks unattractive, but at least it works. Finished without making too many media queries. 
 
+Optimizing images was easy, just saving the picture as a gif through Adobe Illustrator. Next...
 
 
 ##To-do enhancements:
