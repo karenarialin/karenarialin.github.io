@@ -1,7 +1,13 @@
+---
+layout: default
+title: README
+---
+
+
 #Welcome to the portfolio website of Karen Lin! 
 ##What a journey it was to build it. 
 
-You can find it [here](karenarialin.github.io). 
+You can find it [here](http://karenarialin.github.io). 
 
 Structure & tools: Jekyll + Github Pages + CloudFlare
 
@@ -14,6 +20,8 @@ Debated between multi-page and single-scroll layout. Decided on multi-page.
 At first, I struggled along with pure HTML/CSS/Javascript and Github Pages. But I felt like I was writing repetitive code in the headers and footers. The images were loading slowly. The design was lackluster and the colors clashed.
 
 I was also getting some bad scores from Google Page Speed. Error messages: leverage caching, blocking script.
+
+This old design is still in my backup branch because I can't bear to kill old iterations. 
 
 ###Phase 2: 
 
@@ -33,7 +41,19 @@ Mobile responsiveness: got rid of padding on left and right, used wrapper 75%-80
 
 Optimizing images was easy, just saving the picture as a gif through Adobe Illustrator. Next...
 
+Deferring JS loading until all the HTML is loaded. Easy to do for script.js, another thing to defer JQuery. 
+
+But then I looked up other websites, and many of them didn't get 100% on PageSpeed Insights. Even google.com doesn't have 100%. I was just being a short-sighted perfectionist!
+
+So I moved on to Cloudflare. Hopefully that would solve my cache leveraging problems. 
+
+Turns out I needed a custom domain. Oh well, I would have to spend money eventually. asdfasdf
+
 
 ##To-do enhancements:
 1. Restructure Work page so that it uses separate html pages for each section, instead of divs.  
+2. Change landing page design. Kind of egoistic.
+3. Find a custom domain
+4. Clean up CSS. It's a mess. Will use Sass.
+5. Make more mobile responsive. 
 
