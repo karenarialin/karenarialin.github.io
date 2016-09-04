@@ -5,6 +5,7 @@ title: README
 
 
 #Welcome to the portfolio website of Karen Lin! 
+
 ##What a journey it was to build it. 
 
 You can find it [here](http://karenarialin.github.io). 
@@ -47,13 +48,25 @@ But then I looked up other websites, and many of them didn't get 100% on PageSpe
 
 So I moved on to Cloudflare. Hopefully that would solve my cache leveraging problems. 
 
-Turns out I needed a custom domain. Oh well, I would have to spend money eventually. asdfasdf
+Turns out I needed a custom domain. Oh well, I would have to spend money eventually. I think karenarialin.me has a nice ring to it. 
 
+Paid for it on Namecheap! Followed instructions [here](https://help.github.com/articles/using-a-custom-domain-with-github-pages/) to redirect karenarialin.github.io to karenarialin.me. Doesn't work right away, so I finished up for the night and waited for it to work. 
+
+Now I could add the website to my Cloudflare plan. As I waited for it to take effect, I edited my blog to flow better with the website. 
+
+Last step! Sign up for Google Analytics. 
 
 ##To-do enhancements:
-1. Restructure Work page so that it uses separate html pages for each section, instead of divs.  
+
+1. Restructure Work page so that it uses separate html pages for each section, instead of divs. 
+
 2. Change landing page design. Kind of egoistic.
+
 3. Find a custom domain
+
 4. Clean up CSS. It's a mess. Will use Sass.
+
 5. Make more mobile responsive. 
+
+6. Fix README. As you can see, it's not rendering so well. 
 

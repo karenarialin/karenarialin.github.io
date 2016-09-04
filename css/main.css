@@ -142,7 +142,7 @@ h1 {
 .work-link {
     font-size: 40px;
     font-family: 'Maitree', serif;
-    margin: 0px 40px;
+    margin: 0px 30px;
     display: inline-block;
     cursor: pointer;
     color: #004B23;
@@ -299,7 +299,7 @@ a:active {
 .work-1 {
     text-align: center;
     height: 100%;
-    background-color: pink;
+    background-color: #FAF995;
     padding: 20px 0px;
 
 }
@@ -315,7 +315,7 @@ a:active {
 .work-3 {
     text-align: center;
     height: 100%;
-    background-color: pink;
+    background-color: #B8F39D;
     padding: 20px 0px;
 
 }
