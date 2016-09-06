@@ -8,53 +8,47 @@ title: README
 
 ##What a journey it was to build it. 
 
-You can find it [here](http://karenarialin.github.io). 
+You can find it [here](http://karenarialin.me). 
 
-Structure & tools: Jekyll + Github Pages + CloudFlare
+Tools used: Brackets + Google Fonts + Github Pages + Jekyll + CloudFlare + Namecheap + Google Analytics
 
 ###Phase 1:
 
-Design process: did wireframes with pen and paper, designed logo
+DESIGN: finalized personal logo, drew wireframes on pen and paper
 
 Debated between multi-page and single-scroll layout. Decided on multi-page. 
 
-At first, I struggled along with pure HTML/CSS/Javascript and Github Pages. But I felt like I was writing repetitive code in the headers and footers. The images were loading slowly. The design was lackluster and the colors clashed.
+PROBLEMS: At first, I struggled along with pure HTML/CSS/Javascript and Github Pages. But I was using repetitive code in the headers and footers. The images were loading slowly. The design was lackluster and the colors clashed.
 
-I was also getting some bad scores from Google Page Speed. Error messages: leverage caching, blocking script.
-
-This old design is still in my backup branch because I can't bear to kill old iterations. 
+I was getting bad scores from Google PageSpeed Insights. The error messages were "leverage browser caching," and "eliminate render-blocking JavaScript and CSS." 
 
 ###Phase 2: 
 
-I did more research and got feedback from friends before coming up with my current design. 
+REDESIGN: I searched for ways to speed up the loading time and leverage caching. That's when I discovered Jekyll, the static site generator that played nicely with Github Pages. I also found CloudFlare, a Content Delivery Network that promised speed and security. 
 
-I searched for ways to speed up the loading time and "leverage caching," as Google told me to do. That's when I discovered Jekyll, the static site generator that went along so nicely with Github Pages. After more research, I found CloudFlare, a Content Delivery Network that promised speed and security for free. Wow! 
+I did more research and got feedback from friends before coming up with my current design. The old design is still in my backup branch because I can't bear to kill old versions.
 
-It felt like my site was reborn.
-
-Deployed!
+When I deployed the redesign, it felt like my site was reborn. 
 
 ###Phase 3:
 
-The site still loaded my footer background picture slowly, so it was time to talk about mobile responsiveness, analytics, and browser caching. Fun stuff! Things people can't see but are just important.
+FINISHING TOUCHES: The site still loaded my footer background picture slowly, so it was time to fix mobile responsiveness, add analytics, and leverage browser caching.
 
-Mobile responsiveness: got rid of padding on left and right, used wrapper 75%-80%. Still looks unattractive, but at least it works. Finished without making too many media queries. 
+MOBILE RESPONSIVE REDESIGN: Got rid of left and right padding, used 75%-80% width for the div containers. The site still looks unattractive, but at least it works. Finished without making too many media queries. Unfortunately, things would have been much easier if I had started with a mobile-first approach. At least I know how to start the next website project. 
 
-Optimizing images was easy, just saving the picture as a gif through Adobe Illustrator. Next...
+PAGESPEED INSIGHTS: Optimizing images was easy, just saved pictures as gif files through Adobe Illustrator. Next...
 
-Deferring JS loading until all the HTML is loaded. Easy to do for script.js, another thing to defer JQuery. 
+Deferring JS loading was easy for script.js, complicated for JQuery. But then I searched up other websites, and many of them don't have 100% on PageSpeed Insights. Even google.com doesn't have 100%. 
 
-But then I looked up other websites, and many of them didn't get 100% on PageSpeed Insights. Even google.com doesn't have 100%. I was just being a short-sighted perfectionist!
+So I moved on to Cloudflare. Hopefully that would solve my cache leveraging and security problems. But it turns out I need a custom domain. 
 
-So I moved on to Cloudflare. Hopefully that would solve my cache leveraging problems. 
+CUSTOM DOMAIN: I thought karenarialin.me had a nice ring to it, so I bought it on Namecheap. Followed instructions [here](https://help.github.com/articles/using-a-custom-domain-with-github-pages/) to redirect karenarialin.github.io to karenarialin.me. 
 
-Turns out I needed a custom domain. Oh well, I would have to spend money eventually. I think karenarialin.me has a nice ring to it. 
+Now I could add the website to my Cloudflare plan. As I waited for it to take effect, I redesigned my blog to flow better with the website. 
 
-Paid for it on Namecheap! Followed instructions [here](https://help.github.com/articles/using-a-custom-domain-with-github-pages/) to redirect karenarialin.github.io to karenarialin.me. Doesn't work right away, so I finished up for the night and waited for it to work. 
+ANALYTICS: Last step! I signed up for Google Analytics and got it working. 
 
-Now I could add the website to my Cloudflare plan. As I waited for it to take effect, I edited my blog to flow better with the website. 
-
-Last step! Sign up for Google Analytics. 
+Time to deploy and share with the world!
 
 ##To-do enhancements:
 
@@ -62,11 +56,9 @@ Last step! Sign up for Google Analytics.
 
 2. Change landing page design. Kind of egoistic.
 
-3. Find a custom domain
+3. Clean up CSS. It's a mess. Will use Sass.
 
-4. Clean up CSS. It's a mess. Will use Sass.
+4. Make more mobile responsive. 
 
-5. Make more mobile responsive. 
-
-6. Fix README. As you can see, it's not rendering so well. 
+5. Fix README. As you can see, it's not rendering so well. 
 
