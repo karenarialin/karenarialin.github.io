@@ -10,13 +10,13 @@ title: README
 
 You can find it [here](http://karenarialin.me). 
 
-Tools used: Brackets + Google Fonts + Github Pages + Jekyll + CloudFlare + Namecheap + Google Analytics
+Tools used: Adobe Illustrator + Brackets + Google Fonts + Github Pages + Jekyll + CloudFlare + Namecheap + Google Analytics
 
 ###Phase 1:
 
 DESIGN: finalized personal logo, drew wireframes on pen and paper
 
-Debated between multi-page and single-scroll layout. Decided on multi-page. 
+Debated between multi-page and single-scroll layout. Decided on multi-page. Moved all wireframes and logo designs on to Adobe Illustrator. 
 
 PROBLEMS: At first, I struggled along with pure HTML/CSS/Javascript and Github Pages. But I was using repetitive code in the headers and footers. The images were loading slowly. The design was lackluster and the colors clashed.
 
@@ -36,9 +36,9 @@ FINISHING TOUCHES: The site still loaded my footer background picture slowly, so
 
 MOBILE RESPONSIVE REDESIGN: Got rid of left and right padding, used 75%-80% width for the div containers. The site still looks unattractive, but at least it works. Finished without making too many media queries. Unfortunately, things would have been much easier if I had started with a mobile-first approach. At least I know how to start the next website project. 
 
-PAGESPEED INSIGHTS: Optimizing images was easy, just saved pictures as gif files through Adobe Illustrator. Next...
+PAGESPEED INSIGHTS: Optimizing images was easy, just saved pictures as gif files through Illustrator. Next...
 
-Deferring JS loading was easy for script.js, complicated for JQuery. But then I searched up other websites, and many of them don't have 100% on PageSpeed Insights. Even google.com doesn't have 100%. 
+Deferring JS loading was easy for script.js, but complicated for JQuery. But then I searched up other websites, and many of them don't have 100% on PageSpeed Insights. Even google.com doesn't have 100%. 
 
 So I moved on to Cloudflare. Hopefully that would solve my cache leveraging and security problems. But it turns out I need a custom domain. 
 
@@ -60,5 +60,7 @@ Time to deploy and share with the world!
 
 4. Make more mobile responsive. 
 
-5. Fix README. As you can see, it's not rendering so well. 
+5. Add my writing manifesto somewhere
+
+6. Fix README. As you can see, it's not rendering so well. 
 
