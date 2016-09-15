@@ -62,5 +62,7 @@ Time to deploy and share with the world!
 
 5. Add my writing manifesto somewhere
 
-6. Fix README. As you can see, it's not rendering so well. 
+6. Add a fancy HTML comment
+
+7. Fix README. As you can see, it's not rendering so well. 
 
