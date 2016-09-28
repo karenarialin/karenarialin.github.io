@@ -8,8 +8,12 @@ html, head, body {
 
 h1, h2, h3 {
     font-family: 'Maitree', 'Amiko', serif;
+    margin: 0;
 }
 
+h4 {
+    margin: 0;
+}
 
 * {
    box-sizing: border-box;
@@ -261,7 +265,7 @@ a:active {
 
 .landing {
     text-align: center;
-    padding: 150px 0px;
+    padding: 170px 0px;
     background: url(images/logo-pattern.gif);
     background-size: cover;
 }
