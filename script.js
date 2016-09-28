@@ -2,6 +2,33 @@
 
 $(document).ready(function() {
     
+//    $('#droplink').click(function() {
+//        $('.dropdown-content').toggleClass('show');
+//    });
+//    
+////    $(document).click(function (e) {
+////    if (!$(e.target).hasClass("nav-item") 
+////        && $(e.target).parents(".dropdown-content").length === 0) 
+////    {
+////        $(".dropdown-content").removeClass('show');
+////    }
+////});
+//    
+//    window.onclick = function(event) {
+//  if (!event.target.matches('#droplink')) {
+//
+//    var dropdowns = document.getElementsByClassName("dropdown-content");
+//    var i;
+//    for (i = 0; i < dropdowns.length; i++) {
+//      var openDropdown = dropdowns[i];
+//      if (openDropdown.classList.contains('show')) {
+//        openDropdown.classList.remove('show');
+//      }
+//    }
+//  }
+//}
+
+    
     $(".writing-link").addClass('hover');
      $('#writing').show();
     
