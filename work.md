@@ -1,5 +1,0 @@
----
-layout: work
-title: Work
----
-

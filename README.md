@@ -52,7 +52,7 @@ Time to deploy and share with the world!
 
 ##To-do enhancements:
 
-1. Restructure Work page so that it uses separate html pages for each section, instead of divs. 
+1. Restructure Work page so that it uses separate html pages for each section, instead of divs. √
 
 2. Change landing page design. Kind of egoistic.
 
@@ -60,7 +60,7 @@ Time to deploy and share with the world!
 
 4. Make more mobile responsive. 
 
-5. Add my writing manifesto somewhere
+5. Add my writing manifesto somewhere √
 
 6. Add a fancy HTML comment
 

@@ -45,13 +45,7 @@ body {
     z-index: 99;
 }
 
-.nav li {
-  font-size: 24px;
-  line-height: 40px;
-  height: 40px;
-  display: inline-block;
-  margin-right: 4px;
-}
+
  
 .nav a {
   text-decoration: none;
@@ -60,6 +54,15 @@ body {
   transition: .3s;
   z-index: 99;
 }
+
+  .nav li {
+    height: 50px;
+    width: 120px;
+    font-size: 24px;
+    line-height: 40px;
+    display: inline-block;
+    margin-right: 4px;
+  }
 
 .nav-logo {
     width: 45px;
@@ -126,7 +129,6 @@ ul {
 }
 
 
-
 li {
     list-style: none;
 }
@@ -167,6 +169,7 @@ h1 {
     float: right;
     margin-right: 10px;
     padding-top: 10px;
+    padding-left: 0px;
 }
 
 p {
@@ -254,7 +257,7 @@ a:active {
 }
 
 
-.hover {
+.underline {
     text-decoration: underline;
 }
     
@@ -268,6 +271,7 @@ a:active {
     padding: 170px 0px;
     background: url(images/logo-pattern.gif);
     background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
@@ -275,7 +279,7 @@ a:active {
 .about {
     text-align: center;
     height: 100%;
-    background-color: floralwhite;
+    background-color: white;
     padding: 20px 0px;
 }
 
@@ -303,9 +307,9 @@ a:active {
 .work-1 {
     text-align: center;
     height: 100%;
-    background-color: #FAF995;
+    background-color: floralwhite;
     padding: 20px 0px;
-
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .work-2 {
@@ -319,9 +323,9 @@ a:active {
 .work-3 {
     text-align: center;
     height: 100%;
-    background-color: #B8F39D;
+    background-color: floralwhite;
     padding: 20px 0px;
-
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 h2 {
@@ -370,8 +374,9 @@ small {
 }
 
 .work-wrapper {
-    width: 75%;
+    width: 60%;
     margin: auto;
+    text-align: center;
 }
 
 .work-4 {
@@ -393,8 +398,27 @@ small {
 @media screen and (min-width: 600px) {
   .nav li {
     height: 50px;
-    width: 120px;
+    width: 100px;
+    font-size: 24px;
+    line-height: 40px;
+    display: inline-block;
+    margin-right: 4px;
   }
+}
+
+@media screen and (max-width: 600px) {
+  .nav li {
+    height: 50px;
+    width: 60px;
+    font-size: 24px;
+    line-height: 40px;
+    display: inline-block;
+    margin-right: 4px;
+  }
+    
+ .dropdown {
+    margin-left: 10px;
+}
 }
 
 .dropdown {
@@ -431,4 +455,21 @@ small {
 .dropdown-content a {
     display: block;
     
+}
+
+.square {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.work-link:active {
+    text-decoration: underline;
+}
+
+.dropdown-content li {
+    height: 40px;
+    width: 100px;
+}
+
+.dropdown-content li:active {
+    text-decoration: underline;
 }
