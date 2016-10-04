@@ -419,6 +419,15 @@ small {
  .dropdown {
     margin-left: 10px;
 }
+    
+.work-wrapper {
+    width: 80%;
+}
+    
+    .landing {
+        padding-top: 100px;
+        padding-bottom: 20px;
+    }
 }
 
 .dropdown {

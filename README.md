@@ -66,3 +66,5 @@ Time to deploy and share with the world!
 
 7. Fix README. As you can see, it's not rendering so well. 
 
+8. Change to https
+
