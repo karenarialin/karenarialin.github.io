@@ -2,7 +2,16 @@
 
     {% include header.html %}
 
-    {% include work-header.html %}
+    <div class="work-landing">
+        <div class='work-wrapper'>
+        <h1>{{ page.title }}</h1>
+            <h3>&larr; <a href='{{ page.main-page }}.html'>Back to {{ page.main-page }}</a></h3>
+        </div>
+    </div>
+
+    <div class='work-wrapper'>
+        {{ content }}
+    </div>
 
 
 

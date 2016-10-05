@@ -291,6 +291,7 @@ a:active {
     height: 100%;
     width: 100%;
     padding-top: 90px;
+    padding-bottom: 10px;
     background: url(images/logo-pattern.gif);
     background-size: cover;
 }
@@ -309,7 +310,7 @@ a:active {
     text-align: center;
     height: 100%;
     background-color: floralwhite;
-    padding: 20px 0px;
+    padding: 10px 0px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -317,7 +318,7 @@ a:active {
     text-align: center;
     height: 100%;
     background-color: white;
-    padding: 20px 0px;
+    padding: 10px 0px;
     margin: 0;
 }
 
@@ -325,7 +326,7 @@ a:active {
     text-align: center;
     height: 100%;
     background-color: floralwhite;
-    padding: 20px 0px;
+    padding: 10px 0px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -376,8 +377,9 @@ small {
 
 .work-wrapper {
     width: 60%;
-    margin: auto;
+    margin: 10px auto;
     text-align: center;
+    
 }
 
 .work-4 {
