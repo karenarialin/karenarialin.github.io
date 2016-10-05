@@ -1,7 +1,7 @@
 ---
 layout: portfolio-page
 title: Portfolio Website
-main-page: code
+parent-page: code
 ---
 
 What a journey it was to build this website! 
