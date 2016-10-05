@@ -1,5 +1,5 @@
 ---
 layout: home
-title: Karen Aria Lin
+title: Karen A. Lin
 ---
 

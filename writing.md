@@ -1,4 +1,4 @@
 ---
 layout: writing-layout
-title: Writing
+title: Karen A. Lin - Writing
 ---

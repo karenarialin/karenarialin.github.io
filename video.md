@@ -1,4 +1,4 @@
 ---
 layout: video-layout
-title: Video
+title: Karen A. Lin - Video
 ---

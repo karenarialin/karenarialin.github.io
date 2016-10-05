@@ -1,4 +1,4 @@
 ---
 layout: music-layout
-title: Music
+title: Karen A. Lin - Music
 ---

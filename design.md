@@ -1,4 +1,4 @@
 ---
 layout: design-layout
-title: Design
+title: Karen A. Lin - Design
 ---
