@@ -446,6 +446,7 @@ small {
     left: 0;
     right: auto;
     margin-left: -10px;
+    margin-top: 10px;
 }
 
 .nav ul.dropdown-content {
