@@ -58,5 +58,6 @@ Time to deploy and share with the world!
 7. Fix markdown. As you can see, it's not rendering so well. 
 8. Change to https
 9. Get 100% on PageSpeed Insights
+10. Switch blog to Wordpress.org
 
  
