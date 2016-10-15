@@ -7,7 +7,7 @@ main-page: Design
 
 As soon as I started working on the website, I knew I needed a personal logo. Armed with my pen and notebook, I sketched out ideas that represented my interests, identity, and heritage.
 
-![Brainstorming](/css/images/brainstorming.JPG)
+![Brainstorming](/css/images/brainstorming.jpg)
 
 Two pages of noodling later, I found my final design. It was a simple and subtle "K" that combined part of the character written in a Western font with part of the Chinese symbol for “water.” Perfect for an Asian American.
 
