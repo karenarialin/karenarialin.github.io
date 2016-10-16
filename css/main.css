@@ -179,7 +179,7 @@ li {
 }
 
 p {
-    font-size: 16px;
+    font-size: 18px;
     padding-bottom: 2px;
     line-height: 1.6;
 }
@@ -238,7 +238,11 @@ p {
 
 
 .button {
-    text-decoration: none;
+    display: inline-block;
+    margin: 4px 20px;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
 }
 
 a {
@@ -274,7 +278,7 @@ a:active {
 
 .landing {
     text-align: center;
-    padding: 200px 0px;
+    padding: 220px 0px;
     background: url(images/logo-pattern.gif);
     background-size: cover;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -344,7 +348,7 @@ strong {
     font-size: 20px;
     margin: 0px 40px;
     display: inline-block;
-    cursor: pointer;
+    cursor: pointer; 
 }
 
 small {
@@ -490,4 +494,18 @@ small {
 
 .dropdown-content li:active {
     text-decoration: underline;
+}
+
+
+
+
+.work-wrapper .button {
+    background-color: #004B23;
+    color: white;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    font-size: 16px;
+    padding-top: 15px;
+    margin: 20px 20px;
 }
