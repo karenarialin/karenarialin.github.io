@@ -89,7 +89,7 @@ body {
 img {
     max-height: 100%;
     max-width: 100%;
-    margin: 10px 0px;
+    margin: 20px 0px;
 }
 
 footer {
@@ -497,15 +497,20 @@ small {
 }
 
 
-
-
 .work-wrapper .button {
     background-color: #004B23;
     color: white;
     height: 50px;
-    width: 150px;
+    width: 160px;
     border-radius: 10px;
     font-size: 16px;
     padding-top: 15px;
-    margin: 20px 20px;
+    margin: 20px 30px;
+}
+
+
+
+.picture {
+    width: 150px;
+    margin: auto;
 }

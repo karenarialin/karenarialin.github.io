@@ -9,6 +9,8 @@ What a journey it was to build this website!
 
 Tools used: Adobe Illustrator + Brackets + Google Fonts + Github Pages + Jekyll + CloudFlare + Namecheap + Google Analytics
 
+![Sketching](/css/images/sketches.jpg)
+
 ## Phase 1
 
 **DESIGN:** finalized personal logo, drew wireframes on pen and paper
@@ -19,6 +21,8 @@ Debated between multi-page and single-scroll layout. Decided on multi-page. Move
 
 I was getting bad scores from Google PageSpeed Insights. The error messages were "leverage browser caching," and "eliminate render-blocking JavaScript and CSS." 
 
+![First design](/css/images/Design1.png)
+
 ## Phase 2
 
 **REDESIGN:** I searched for ways to speed up the loading time and leverage caching. That's when I discovered Jekyll, the static site generator that played nicely with Github Pages. I also found CloudFlare, a Content Delivery Network that promised speed and security. 
@@ -26,6 +30,8 @@ I was getting bad scores from Google PageSpeed Insights. The error messages were
 I did more research and got feedback from friends before coming up with my current design. The old design is still in my backup branch because I can't bear to kill old versions.
 
 When I deployed the redesign, it felt like my site was reborn. 
+
+![Redesign](/css/images/Redesign.png)
 
 ## Phase 3
 
@@ -47,6 +53,8 @@ Now I could add the website to my Cloudflare plan. As I waited for it to take ef
 
 Time to deploy and share with the world!
 
+![Final design](/css/images/finaldesign.png)
+
 ## To-do enhancements
 
 1. Restructure Work page so that it uses separate html pages for each section, instead of divs. √
@@ -59,5 +67,6 @@ Time to deploy and share with the world!
 8. Change to https
 9. Get 100% on PageSpeed Insights
 10. Switch blog to Wordpress.org
+11. Left-align
 
  
