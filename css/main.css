@@ -514,3 +514,11 @@ small {
     width: 150px;
     margin: auto;
 }
+
+.footer-icons {
+    padding: 16px;
+}
+
+.footer-icons img {
+    margin: 0;
+}
