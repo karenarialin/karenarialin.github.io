@@ -1,9 +1,3 @@
----
-layout: default
-title: README
----
-
-
 #Welcome to the portfolio website of Karen Lin! 
 
 ##What a journey it was to build it. 
@@ -64,7 +58,17 @@ Time to deploy and share with the world!
 
 6. Add a fancy HTML comment
 
-7. Fix README. As you can see, it's not rendering so well. 
+7. Fix README. √
 
 8. Change to https
+
+9. Get 100% on PageSpeed Insights
+
+10. Switch blog to Wordpress.org
+
+11. Left-align text
+
+12. Choose a Black Sheep piece to put on the Internet
+
+
 

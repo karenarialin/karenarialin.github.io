@@ -15,7 +15,7 @@ To my delight, it was versatile enough to place in other settings. In the music 
 
 ![Logo Design](/css/images/Logodesign.png 'Done in Adobe Illustrator')
 
-Other variations touch upon other parts of my life, like my spirit animal or love for writing. I used the different logo variations to create a pattern.
+Other variations touch upon other parts of my life, like my spirit animal or my love for writing. I used the different logo variations to create a pattern.
 
 ![Pattern](/css/images/Pattern.png)
 

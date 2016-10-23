@@ -11,17 +11,21 @@ Tools used: Adobe Illustrator + Brackets + Google Fonts + Github Pages + Jekyll 
 
 ![Sketching](/css/images/sketches.jpg)
 
+##### Wireframe sketches
+
 ## Phase 1
 
-**DESIGN:** finalized personal logo, drew wireframes on pen and paper
+**DESIGN:** I finalized my personal logo and sketched wireframes on pen and paper.
 
-Debated between multi-page and single-scroll layout. Decided on multi-page. Moved all wireframes and logo designs on to Adobe Illustrator. 
+I debated between a multi-page and single-scroll layout before deciding on the multi-page format. I moved the pen-and-paper wireframes and logo designs on to Adobe Illustrator. 
 
-**PROBLEMS:** At first, I struggled along with pure HTML/CSS/Javascript and Github Pages. But I was using repetitive code in the headers and footers. The images were loading slowly. The design was lackluster and the colors clashed.
+**PROBLEMS:** At first, I struggled along with coding in pure HTML/CSS/Javascript and Github Pages. I discovered that I was using lots of repetitive code in the headers and footers. The images were loading slowly. The design was lackluster and the colors clashed.
 
 I was getting bad scores from Google PageSpeed Insights. The error messages were "leverage browser caching," and "eliminate render-blocking JavaScript and CSS." 
 
 ![First design](/css/images/Design1.png)
+
+##### A section of my Adobe Illustrator canvas  
 
 ## Phase 2
 
@@ -32,6 +36,8 @@ I did more research and got feedback from friends before coming up with my curre
 When I deployed the redesign, it felt like my site was reborn. 
 
 ![Redesign](/css/images/Redesign.png)
+
+##### Back when I still enjoyed using the Archer font
 
 ## Phase 3
 
@@ -55,18 +61,8 @@ Time to deploy and share with the world!
 
 ![Final design](/css/images/finaldesign.png)
 
-## To-do enhancements
+## Phase 4
 
-1. Restructure Work page so that it uses separate html pages for each section, instead of divs. √
-2. Change landing page design. Kind of egoistic.
-3. Clean up CSS. It's a mess. Will use Sass.
-4. Make more mobile responsive. 
-5. Add my writing manifesto somewhere √
-6. Add a fancy HTML comment
-7. Fix markdown. As you can see, it's not rendering so well. 
-8. Change to https
-9. Get 100% on PageSpeed Insights
-10. Switch blog to Wordpress.org
-11. Left-align
+**FINE-TUNING:** Changes are still ongoing. I'm collecting feedback from friends and family and researching like crazy to make the website better. Stay tuned!
 
  
