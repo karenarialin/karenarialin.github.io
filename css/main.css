@@ -179,7 +179,7 @@ li {
 }
 
 p {
-    font-size: 18px;
+    font-size: 16px;
     padding-bottom: 2px;
     line-height: 1.6;
 }
@@ -290,7 +290,7 @@ a:active {
     text-align: center;
     height: 100%;
     background-color: white;
-    padding: 20px 0px;
+    padding: 60px 0px;
 }
 
 
@@ -386,7 +386,7 @@ small {
     margin: 10px auto;
     text-align: center;
     padding: 40px 0px;
-    
+   
 }
 
 .work-4 {
@@ -417,29 +417,39 @@ small {
 
 }
 
+/*Cellphone size only*/
 @media screen and (max-width: 600px) {
-  .nav li {
-    height: 50px;
-    width: 60px;
-    font-size: 16px;
-    line-height: 40px;
-    display: inline-block;
-    margin-right: 4px;
-  }
-    
- .dropdown {
-    margin-left: 10px;
-}
-    
-.work-wrapper {
-    width: 80%;
-}
+      .nav li {
+        height: 50px;
+        width: 60px;
+        font-size: 16px;
+        line-height: 40px;
+        display: inline-block;
+        margin-right: 4px;
+      }
+
+     .dropdown {
+        margin-left: 10px;
+    }
+
+    .work-wrapper {
+        width: 80%;
+    }
     
     .landing {
         padding-top: 100px;
         padding-bottom: 20px;
     }
 }
+
+
+.left-side, .verticalLine {
+    width: 80%;
+    margin: auto;
+}
+
+    
+
 
 .dropdown {
     position: relative;
@@ -539,3 +549,63 @@ small {
 	height: 100%;
     box-sizing: content-box;
 }
+
+/*Desktop size for About page*/
+@media screen and (min-width: 838px) {
+  .verticalLine {
+    border-left: thin solid black;
+    width: 50%;
+    float: right;
+    padding: 0px 78px 0px 47px
+}
+
+.left-side {
+    float: left;
+    width: 40%;
+    margin-left: 72px;
+    padding: 0px 20px;
+}
+    .divider {
+        display: none;
+    }
+    
+.right-side {
+    padding: 0px 20px;
+    margin: 0px 4px;
+}
+}
+
+
+
+.both {
+    overflow: hidden;
+    margin: 50px 0px;
+}
+
+.vertical_Line {
+    height:150px; 
+    width:1px;
+    background:#000;
+    clear: both;
+}
+
+hr {
+    width: 30%;
+    margin: 40px auto;
+}
+
+/*
+.about-box {
+    padding: 0px 20px;
+}
+*/
+
+.about-header {
+    padding
+}
+
+
+
+
+
+
