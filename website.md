@@ -63,6 +63,12 @@ Time to deploy and share with the world!
 
 ## Phase 4
 
-**FINE-TUNING:** Changes are still ongoing. I'm collecting feedback from friends and family and researching like crazy to make the website better. Stay tuned!
+**FINE-TUNING:** As I continued to receive feedback, some people told me that the site looked a bit plain. Indeed, the linear structure of the information made even my own eyes glaze over.
+
+I started with a redesign of the About page. This time, I drew my wireframes in Sketch.
+
+![About page](/css/images/aboutwireframe.png)
+
+<strong>Changes are still ongoing.</strong> I'm collecting feedback and researching like crazy to make the website better. Stay tuned!
 
  
