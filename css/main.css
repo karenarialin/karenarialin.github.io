@@ -609,3 +609,8 @@ hr {
 
 
 
+
+.graphic {
+    width: 50%;
+    display: inline-block;
+}
