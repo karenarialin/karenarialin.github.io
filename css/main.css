@@ -7,7 +7,7 @@ html, head, body {
 }
 
 h1, h2, h3 {
-    font-family: 'Maitree', 'Amiko', serif;
+    font-family: 'Quattrocento', 'Georgia', serif;
     margin: 0;
 }
 
@@ -35,7 +35,7 @@ body {
   margin: 0;
   padding: 0;
   background: #fff;
-  font-family: 'Amiko', sans-serif;
+  font-family: 'Quattrocento Sans', 'Helvetica', sans-serif;
   color: #004B23;
 }
 
@@ -153,8 +153,7 @@ li {
 
 .work-link {
     font-size: 25px;
-    font-family: 'Maitree', serif;
-    margin: 0px 10px;
+    margin: 5px 10px;
     display: inline-block;
     cursor: pointer;
     color: #004B23;
@@ -171,15 +170,9 @@ li {
 
 
 
-.nav-wrapper {
-    float: right;
-    margin-right: 10px;
-    padding-top: 10px;
-    padding-left: 0px;
-}
 
 p {
-    font-size: 16px;
+    font-size: 20px;
     padding-bottom: 2px;
     line-height: 1.6;
 }
@@ -194,8 +187,7 @@ p {
 
 .work-links {
     width: 70%;
-    margin: 0 auto;
-    padding: 0;
+    margin: 10px auto;
 
 }
 
@@ -357,7 +349,6 @@ small {
 
 .landing-description {
     font-size: 25px;
-    font-family: 'Maitree', serif;
 }
 
 .work-logo {
@@ -440,6 +431,7 @@ small {
         padding-top: 100px;
         padding-bottom: 20px;
     }
+    
 }
 
 
@@ -448,6 +440,12 @@ small {
     margin: auto;
 }
 
+.nav-wrapper {
+    float: right;
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-left: 0px;
+}
     
 
 
@@ -550,6 +548,8 @@ small {
     box-sizing: content-box;
 }
 
+
+
 /*Desktop size for About page*/
 @media screen and (min-width: 838px) {
   .verticalLine {
@@ -573,6 +573,8 @@ small {
     padding: 0px 20px;
     margin: 0px 4px;
 }
+
+    
 }
 
 
