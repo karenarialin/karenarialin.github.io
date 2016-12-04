@@ -66,11 +66,14 @@ Time to deploy and share with the world!
 
 10. Switch blog to Wordpress.org
 
-11. Left-align text
+11. Left-align [text
 
 12. Choose a Black Sheep piece to put on the Internet
 
-13. Change fonts
+13. Change fonts √
 
+14. Sidebar menu for mobile site
+
+15. Change link animations
 
 

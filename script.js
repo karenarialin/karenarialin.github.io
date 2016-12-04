@@ -28,48 +28,23 @@ $(document).ready(function() {
   }
 }
 
-//    
-////    $(".writing-link").addClass('hover');
-////     $('#writing').show();
-//    
-//	$(".writing-link").click(function() {
-//        $(".work-link").removeClass('hover');
-//        $(".writing-link").addClass('hover');
-////        $(".work-section").hide();
-////		$("#writing").show();
-//        
-//	});
-//	
-//    $(".design-link").click(function() {
-//        $(".work-link").removeClass('hover');
-//        $(".design-link").addClass('hover');
-////        $(".work-section").hide();
-////		$("#design").show();
-//        
-//	});
-//    
-//    $(".code-link").click(function() {
-//        $(".work-link").removeClass('hover');
-//        $(".code-link").addClass('hover');
-////        $(".work-section").hide();
-////		$("#code").show();
-//        
-//	});
-//    
-//    $(".video-link").click(function() {
-//        $(".work-link").removeClass('hover');
-//        $(".video-link").addClass('hover');
-////        $(".work-section").hide();
-////		$("#video").show();
-//        
-//	});
-//    
-//    $(".music-link").click(function() {
-//        $(".work-link").removeClass('hover');
-//        $(".music-link").addClass('hover');
-////        $(".work-section").hide();
-////		$("#music").show();
-//        
-//	});
+var modal = document.getElementById('myModal');
+    
+var img = document.getElementById('myImg');
+
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    var modalImg = document.getElementById("img01");
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
 
 })

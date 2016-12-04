@@ -1,8 +1,8 @@
 ---
 layout: portfolio-page
 title: Ranker
-parent-page: code
-main-page: Code
+parent-page: design
+main-page: Design
 ---
 
 The idea came to me when I was trying to decide what my five favorite college classes were. I looked online for an app that would allow me to compare two items on my list at a time and choose which one to rank higher on my list. But all the apps I found on the web sorted items automatically by numbers or letters.
