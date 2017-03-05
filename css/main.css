@@ -304,29 +304,24 @@ a:active {
     margin: 0;
 }
 
-
-
-.work-1 {
+.work-1, .work-2, .work-3, .work-4 {
     text-align: center;
     height: 100%;
-    background-color:  #FAF995;
-    padding: 10px 0px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.work-2 {
-    text-align: center;
-    height: 100%;
-    background-color: white;
     padding: 10px 0px;
     margin: 0;
 }
 
+.work-1 {
+    background-color:  #FAF995;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.work-2, .work-4 {
+    background-color: white;
+}
+
 .work-3 {
-    text-align: center;
-    height: 100%;
     background-color: #B7BBF5;
-    padding: 10px 0px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -380,14 +375,7 @@ small {
    
 }
 
-.work-4 {
-    text-align: center;
-    height: 100%;
-    background-color: white;
-    padding: 20px 120px;
 
-
-}
 
 
 
