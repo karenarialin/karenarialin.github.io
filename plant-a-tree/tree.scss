@@ -5,13 +5,14 @@
 @import url('https://fonts.googleapis.com/css?family=Hind|Montserrat');
 
 
-$sky-color: #9fe6fc;
+$sky-color: #c9eeff;
 $dirt-color: #995b37;
 $branch-color: #cc9966;
 $tree-branch-color: #bc946d;
 $leaf-color: #23a025;
 $dark-green: #004B23;
 $arrow-color: $dark-green;
+$grass-color: #75cc6a;
 
 * {
     box-sizing: border-box;
@@ -19,7 +20,7 @@ $arrow-color: $dark-green;
 
 
 div {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
 body {
@@ -27,7 +28,7 @@ body {
     padding: 0;
     font-family: 'Hind', sans-serif;
     color: $dark-green;
-    background-color: white;
+    background-color: $sky-color;
 }
 
 
@@ -35,8 +36,20 @@ h1 {
     margin-top: 50px;
 }
 
+h2 {
+    font-size: 19px;
+}
+
 h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: $dark-green;
+  text-decoration: none;
+  &:hover {
+    color: lighten( $dark-green, 20% );
+  }
 }
 
 .nav-logo {
@@ -64,6 +77,7 @@ h1, h2, h3, h4 {
 
 .step {
     @extend %step-height;
+    opacity: 0;
 }
 
 .page {
@@ -75,17 +89,96 @@ h1, h2, h3, h4 {
 }
 
 
+
 .grass {
   content: '';
   width: 100%;
   height: 200px;
-  background: #75cc6a;
+  background: $grass-color;
   position: absolute;
   bottom: 0; 
   left: 0;
   right: 0;
 }
 
+$total: 3;
+
+.grass-container {
+  width: 393px;
+  height: 65px;
+  bottom: 65px;
+  position: relative;
+    &:first-child {
+        left: -53px;
+    }
+    &:nth-child(2) {
+        left: 584px;
+        bottom: 130px;
+    }
+    &:nth-child(3) {
+        left: 1046px;
+        bottom: 195px;
+    }
+}
+
+.grass-stem {
+  height: 120px;
+  width: 10px;
+  border-left: 11px solid $grass-color;
+  border-radius:50%;
+  position: relative;
+  top: 40px;
+  transform: rotate(8deg);
+}
+
+.grass-stem:after {
+  content: '';
+  height: 120px;
+  width: 10px;
+  border-right: 11px solid $grass-color;
+  border-radius: 50%;
+  position: absolute;
+   left: -12px;
+  transform: rotate(-23deg);
+}
+
+@for $i from 1 through $total {
+  .grass-stem:nth-child(#{$i}) {
+    left: $i * 100px;
+    top: 40px + ($i - 1) * -119px;
+  }
+}
+
+.dirt-pile {
+  background: $dirt-color;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 619px;
+  bottom: 195px;
+  border-radius: 40%;
+  z-index: 99;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 33px;
+    border-radius: 40%;
+    background: $dirt-color;
+    left: 12px;
+    bottom: -2px;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    width: 21px;
+    height: 24px;
+    border-radius: 40%;
+    background: $dirt-color;
+    left: 33px;
+    bottom: -4px;
+  }
+}
 
 
 .hole {
@@ -135,8 +228,8 @@ $mulch-color3: #82603f;
     position: absolute;
     height: 80px;
     width: 80px;
-    left: 248px;
-    top: 91px;
+    left: 373px;
+    top: 169px;
 }
 
 .what-mulch:after {
@@ -202,7 +295,7 @@ $mulch-color3: #82603f;
   position: relative;
   height: 113px;
   width: 113px;
-  top: -16px;
+  top: -56px;
   left: 339px;
   transform: scale(.8);
 }
@@ -215,6 +308,11 @@ $mulch-color3: #82603f;
   top: 116px;
   right: -19%;
   font-size: 24px;
+}
+
+.what .hose-container {
+    top: 67px;
+    left: 238px;
 }
 
 %shadows {
@@ -340,7 +438,7 @@ box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
   bottom: 218px;
   border-right: 20px solid transparent;
     border-left: 20px solid transparent;
-    border-bottom: 90px solid blue;
+    border-bottom: 90px solid #448cff;
   transform: rotate(-15deg);
   border-radius: 60%;
     z-index: 90;
@@ -485,8 +583,8 @@ box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
   width: 170px;
   height: 80px;
   background: #4a47ff;
-  top: -46px;
-  left: 218px;
+  top: -44px;
+  left: 207px;
   border-radius: 20%;
 }
 
@@ -514,6 +612,17 @@ box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
 .landing {
     height: 680px;
     position: relative;
+    border-bottom: 30px solid $grass-color;
+    background: -webkit-linear-gradient($sky-color, #fff);
+	background: -linear-gradient($sky-color, #fff);
+	background: -moz-linear-gradient($sky-color, #fff);
+}
+
+.landing-second-half {
+    background: -webkit-linear-gradient(#fff, $sky-color);
+	background: -linear-gradient(#fff, $sky-color);
+	background: -moz-linear-gradient(#fff, $sky-color);
+    padding: 1px;
 }
 
 .sun-container {
@@ -600,7 +709,7 @@ box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
 }
 
 //Cloud code
-$cloud-color: rgba(255, 255, 255, 0.9);
+$cloud-color: #FFF;
 
 .cloud {
   position: absolute;
@@ -651,18 +760,34 @@ $cloud-color: rgba(255, 255, 255, 0.9);
 
 
 %dimensions {
-    width: 49%;
+    width: 65%;
     height: 300px;
     position: relative;
+    text-align: center;
+    margin: 150px auto;
+    opacity: 0;
+    padding: 1px;
 }
 
 .what {
     @extend %dimensions;
-    float: left;
-    position: relative;
+}
+
+.where {
+    @extend %dimensions;
+}
+
+.when {
+    @extend %dimensions;
+}
+
+.why {
+    @extend %dimensions;
 }
 
 //root ball
+
+
 
 .root-ball-container {
   width: 200px;
@@ -671,7 +796,7 @@ $cloud-color: rgba(255, 255, 255, 0.9);
 }
 
 .what-section {
-    top: -31px;
+    top: 21px;
     left: 81px;
     transform: scale(.5);
 }
@@ -703,20 +828,27 @@ $cloud-color: rgba(255, 255, 255, 0.9);
   height: 343px;
   position: absolute;
   bottom: 6px;
-  left: 196px;
+  left: 358px;
   z-index: 98;
 }
 
 .dig-animation {
-    -webkit-animation: dig 1s ease-in-out infinite alternate;
-     -moz-animation: dig 1s ease-in-out infinite alternate;
-       -o-animation: dig 1s ease-in-out infinite alternate;
-  animation: dig 1s ease-in-out infinite alternate;    
+    -webkit-animation: dig 3s ease-in-out infinite normal;
+     -moz-animation: dig 3s ease-in-out infinite normal;
+       -o-animation: dig 3s ease-in-out infinite normal;
+  animation: dig 3s ease-in-out infinite normal;    
 }
 
 @keyframes dig {
-     0%, 50% {transform: translateY(100px) skew(-5deg,5deg)};
-     100% {transform: translateX(200px)};
+/*//     0%, 50% {transform: translateY(100px) skew(-5deg,5deg)};
+//     100% {transform: translateX(200px)};
+//    50%  {transform: translateX(-100px)};
+//    100% {transform: translate(-100px, 110px)};*/
+    16% {transform: translate(0, 50px)};
+  32% {transform: translate(0, -50px)}
+  48%  {transform: translate(-100px, -50px)};
+  64%  {transform: translate(-100px, 50px)};
+    80% {transform: translate(-50px)};
     }
 
 .place-section {
@@ -739,10 +871,10 @@ $cloud-color: rgba(255, 255, 255, 0.9);
 }
 
 .animate-fill {
-      -webkit-animation: fill-hole 3s ease-in-out forwards;
-     -moz-animation: fill-hole 3s ease-in-out forwards;
-       -o-animation: fill-hole 3s ease-in-out forwards;
-  animation: fill-hole 3s ease-in-out forwards;
+      -webkit-animation: fill-hole 1.5s ease-in-out forwards;
+     -moz-animation: fill-hole 1.5s ease-in-out forwards;
+       -o-animation: fill-hole 1.5s ease-in-out forwards;
+  animation: fill-hole 1.5s ease-in-out forwards;
 }
 
 @keyframes plant {
@@ -857,7 +989,7 @@ $cloud-color: rgba(255, 255, 255, 0.9);
   height: 81px;
   width: 10px;
   position: absolute;
-  background: brown;
+  background: #875211;
   border-radius: 30%;
   left: 493px;
   bottom: 302px;
@@ -870,7 +1002,7 @@ $cloud-color: rgba(255, 255, 255, 0.9);
   width: 40px;
   right: 0;
   top: 23px;
-  border-bottom: 8px solid #198c19;
+  border-bottom: 8px solid #11873a;
   border-radius: 20%;
 }
 
@@ -965,20 +1097,6 @@ $cloud-color: rgba(255, 255, 255, 0.9);
   z-index: 96;
 }
 
-.where {
-    @extend %dimensions;
-    float: right;
-}
-
-.when {
-    @extend %dimensions;
-    float: left;
-}
-
-.why {
-    @extend %dimensions;
-    float: right;
-}
 
 %tree-branch {
   height: 10px;
@@ -1150,7 +1268,7 @@ $cloud-color: rgba(255, 255, 255, 0.9);
   position: absolute;
   width: 150px;
   height: 100px;
-  background: white;
+  background: #A892E5;
   bottom: 0;
   left: 20px;
 }
@@ -1426,10 +1544,7 @@ $stem-color: darken($leaf-color, 15%);
 
 
 .landing-container {
-    height: 1013px;
-    background: -webkit-linear-gradient($sky-color, #fff);
-	background: -linear-gradient($sky-color, #fff);
-	background: -moz-linear-gradient($sky-color, #fff);
+    height: 2632px;
 }
 
 .half {
@@ -1452,8 +1567,16 @@ $stem-color: darken($leaf-color, 15%);
     position: relative;
     float: right;
     width: 50%;
+    top: 40px;
 }
 
+.landing-container .text {
+    top: 28px
+}
+
+.measure .text {
+    top: 202px;
+}
 
 li {
     margin-bottom: 7px;
@@ -1462,11 +1585,13 @@ li {
 }
 
 .landing-page {
-    top: -47px;
+    top: -11px;
     left: -23px;
 }
 
-.fill-page {
+.fill-shovel {
+    top: -48px;
+    left: 29px;
     transform: skew(-20deg, 10deg) scale(.3);
 }
 
@@ -1490,6 +1615,19 @@ li {
     transform: scale(.2);
 }
 
+.landing .trunk-container {
+    transform: scale(.7);
+    left: 125px;
+    bottom: -44px;
+}
+
+.extra .trunk-container {
+  transform: scale(.8);
+    left: 80%;
+    bottom: -102px;
+    z-index: -1;
+}
+
 .when-container {
     position: absolute;
     width: 313px;
@@ -1498,19 +1636,15 @@ li {
 }
 
 
-.dig-page {
-    top: 108px;
-    left: 376px;
-    transform: skew(-20deg, 10deg) scale(.3);
-}
+
 
 .ruler-container {
     width: 394px;
     height: 111px;
     transform: scale(.4);
-    position: relative;
-    left: 145px;
-    top: 16px;
+    position: absolute;
+    left: 353px;
+    top: 173px;
 }
 
 .ruler-container:after {
@@ -1543,7 +1677,8 @@ li {
     height: 100px;
     position: relative;
     text-align: center;
-    padding: 40px;
+    padding: 30px;
+    background: $grass-color;
 }
 
 .fill {
@@ -1566,18 +1701,10 @@ small {
     font-size: 20px;
 }
 
-
-
-
-
-
-
-
-
 .find-out .arrow {
     transform: rotate(90deg);
     left: 49%;
-    top: 68px;
+    top: 65px;
     width: 34px;
     &:before {
         transform: translate(29px, -6px);
@@ -1585,21 +1712,57 @@ small {
     &:after {
         display: none;
     }
+  
 }
 
+
 .page-container .arrow {
-    transform: rotate(90deg);
-    bottom: 100px;
-    left: 214px;
+    bottom: 3px;
+    left: 91px;
     width: 126px;
     &:before {
-        transform: translate(119px, -7px);
+        transform: translate(119px, -6px);
     }
     &:after {
-        transform: translate(-119px, -22px);
+        transform: translate(-119px, -21px);
+    }
+    &:nth-child(2) {
+        left: 205px;
+        width: 126px;
+        bottom: 100px;
+        transform: rotate(90deg);
     }
 }
 
 h3 {
     font-size: 24px;
 }
+
+
+
+.earth-day {
+    height: 244px;
+    padding-top: 60px;
+}
+
+.container1 {
+  position: relative;
+  float: left;
+}
+
+
+.what-container {
+    margin: 0 0 0 120px;
+}
+
+.what-container > div {
+    position: relative;
+    width: 30.7%;
+    float: left;
+}
+
+.what-container div div {
+    float: right;
+}
+
+
