@@ -8,11 +8,28 @@
 $sky-color: #c9eeff;
 $dirt-color: #995b37;
 $branch-color: #cc9966;
-$tree-branch-color: #bc946d;
-$leaf-color: #23a025;
+$tree-branch-color: #A17951;
+$tree-leaf-color: #44884C;
+$hose-color: $tree-leaf-color;
 $dark-green: #004B23;
 $arrow-color: $dark-green;
-$grass-color: #75cc6a;
+$grass-color: #7FD48A;
+$mulch-color1: #bc946d; 
+$mulch-color2: #965c22;
+$mulch-color3: #82603f;
+$cloud-color: #FFF;
+$leaf-color: #ffac3f;
+$stem-color: darken($leaf-color, 15%);
+$yellow-color: #FFFD77;
+$sun-color: $yellow-color;
+$ray-color: #fffec4;
+$house-color: #FFE2E6;
+$flower-color: #A94BBB; 
+$water-color: #448cff;
+$tie-color: #468C4F;
+$stake-color: #7F5933;
+
+
 
 * {
     box-sizing: border-box;
@@ -34,10 +51,15 @@ body {
 
 h1 {
     margin-top: 50px;
+    font-size: 50px;
 }
 
 h2 {
-    font-size: 19px;
+    font-size: 27px;
+}
+
+h3 {
+    font-size: 43px;
 }
 
 h1, h2, h3, h4 {
@@ -50,6 +72,10 @@ a {
   &:hover {
     color: lighten( $dark-green, 20% );
   }
+}
+
+p {
+  font-size: 18px;
 }
 
 .nav-logo {
@@ -198,9 +224,7 @@ $total: 3;
     z-index: 99;
 }
 
-$mulch-color1: #bc946d; 
-$mulch-color2: #965c22;
-$mulch-color3: #82603f;
+
 
 @mixin mulch($first-angle, $second-angle) {
   background: linear-gradient($first-angle, $mulch-color1 12%, transparent 0, transparent 88%, $mulch-color1 0),
@@ -310,8 +334,8 @@ $mulch-color3: #82603f;
   font-size: 24px;
 }
 
-.what .hose-container {
-    top: 67px;
+.what-hose-container {
+    top: 7px;
     left: 238px;
 }
 
@@ -324,7 +348,7 @@ box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
 @mixin hose-layer($diameter, $left-top) {
   border-radius: 50%;
   position: absolute;
-  border: 15px solid green;
+  border: 15px solid $hose-color;
   height: $diameter;
   width: $diameter;
   left: $left-top;
@@ -358,7 +382,7 @@ box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
   width: 17px;
   height: 12px;
   position: absolute;
-  background: yellow;
+  background: $yellow-color;
   z-index: 96;
   left: 95px;
   border-radius: 10%
@@ -408,10 +432,10 @@ box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
 .hose {
   width: 500px; 
   height: 100px;  
-  border: solid 15px green;
-  border-color:transparent transparent green transparent;
+  border: solid 15px $dark-green;
+  border-color:transparent transparent $dark-green transparent;
   border-radius: 90%/0 0 100px 100px;
-  bottom: 339px;
+  bottom: 398px;
   left: -522px;
   position: relative;
 }
@@ -420,13 +444,13 @@ box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
   @extend %hose-connector;
   transform: rotate(68deg);
   left: -71px;
-  bottom: 375px;
+  bottom: 436px;
 }
 
 .hose-spout2 {
   @extend %hose-spout;
   left: -60px;
-  bottom: 375px;
+  bottom: 436px;
   transform: rotate(-115deg) scaleX(-1);
   
 }
@@ -438,8 +462,8 @@ box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
   bottom: 218px;
   border-right: 20px solid transparent;
     border-left: 20px solid transparent;
-    border-bottom: 90px solid #448cff;
-  transform: rotate(-15deg);
+    border-bottom: 90px solid $water-color;
+  transform: rotate(-17deg);
   border-radius: 60%;
     z-index: 90;
     opacity: 0;
@@ -643,7 +667,7 @@ box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
   position: absolute;
   width: 100px;
   height: 100px;
-  background: orange;
+  background: $sun-color;
   top: 64px;
   left: 60px;
   box-sizing: border-box;
@@ -659,7 +683,7 @@ box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
   border-top: 30px solid transparent;
-  border-bottom: 70px solid #fffec4;
+  border-bottom: 70px solid $ray-color;
 }
 
 .ray {
@@ -709,7 +733,6 @@ box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
 }
 
 //Cloud code
-$cloud-color: #FFF;
 
 .cloud {
   position: absolute;
@@ -827,7 +850,7 @@ $cloud-color: #FFF;
   width: 189px;
   height: 343px;
   position: absolute;
-  bottom: 6px;
+  bottom: 57px;
   left: 358px;
   z-index: 98;
 }
@@ -989,7 +1012,7 @@ $cloud-color: #FFF;
   height: 81px;
   width: 10px;
   position: absolute;
-  background: #875211;
+  background: $stake-color;
   border-radius: 30%;
   left: 493px;
   bottom: 302px;
@@ -999,10 +1022,10 @@ $cloud-color: #FFF;
 .stake:after {
   content: '';
   position: absolute;
-  width: 40px;
+  width: 44px;
   right: 0;
   top: 23px;
-  border-bottom: 8px solid #11873a;
+  border-bottom: 8px solid $tie-color;
   border-radius: 20%;
 }
 
@@ -1116,8 +1139,8 @@ $cloud-color: #FFF;
   width: 200px;
   height: 300px;
   position: absolute;
-  left: 19px;
-  bottom: -31px;
+  left: 34px;
+  bottom: -98px;
   transform: scale(.4);
 }
 
@@ -1211,7 +1234,7 @@ $cloud-color: #FFF;
   width: 170px;
   height: 150px;
   z-index: -1;
-  background: $leaf-color;
+  background: $tree-leaf-color;
   border-radius: 100%;
 }
 
@@ -1268,7 +1291,7 @@ $cloud-color: #FFF;
   position: absolute;
   width: 150px;
   height: 100px;
-  background: #A892E5;
+  background: $house-color;
   bottom: 0;
   left: 20px;
 }
@@ -1373,8 +1396,6 @@ $house-border: black;
 
 //leaf
 
-$leaf-color: #ffac3f;
-$stem-color: darken($leaf-color, 15%);
 
 .leaf {
   position: relative;
@@ -1468,7 +1489,7 @@ $stem-color: darken($leaf-color, 15%);
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: yellow;
+  background: $yellow-color;
   margin: 0 auto;
   top: 53px;
   position: relative;
@@ -1479,7 +1500,7 @@ $stem-color: darken($leaf-color, 15%);
   position: absolute;
   width: 60px;
   height: 60px;
-  background: #eda7f9;
+  background: $flower-color;
   border-radius: 90% 0 55% 50% / 55% 0 90% 50%;
 }
 
@@ -1520,7 +1541,7 @@ $stem-color: darken($leaf-color, 15%);
 .flower-stem {
   height: 120px;
   width: 25px;
-  border-left: 11px solid green;
+  border-left: 11px solid $tree-leaf-color;
   border-radius:50%;
   position: absolute;
   left: 90px;
@@ -1533,7 +1554,7 @@ $stem-color: darken($leaf-color, 15%);
   position: absolute;
   width: 40px;
   height: 20px;
-  border-bottom: 14px solid green;
+  border-bottom: 14px solid $tree-leaf-color;
   // border-radius: 90% 0 55% 50% / 55% 0 90% 50%;
   border-radius: 50%;
   left: -2px;
@@ -1567,7 +1588,7 @@ $stem-color: darken($leaf-color, 15%);
     position: relative;
     float: right;
     width: 50%;
-    top: 40px;
+    z-index: 99;
 }
 
 .landing-container .text {
@@ -1732,10 +1753,6 @@ small {
         bottom: 100px;
         transform: rotate(90deg);
     }
-}
-
-h3 {
-    font-size: 24px;
 }
 
 
