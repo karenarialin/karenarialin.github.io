@@ -1,6 +1,7 @@
 ---
 layout: portfolio-page
 title: Ranker
+subtitle: Creating a list-sorting app
 parent-page: design
 main-page: Design
 ---

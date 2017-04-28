@@ -5,7 +5,7 @@
     <div class="work-landing">
         <div class='work-wrapper'>
         <h2>{{ page.title }}</h2>
-            <h3>&larr; <a href='{{ page.parent-page }}.html'>Back to {{ page.main-page }}</a></h3>
+        <h3>{{ page.subtitle }}</h3>
         </div>
     </div>
 
@@ -13,6 +13,10 @@
         {{ content }}
     </div>
 
+    <div class='work-wrapper'>
+        <h3>&larr; <a href='{{ page.parent-page }}.html'>Back to {{ page.main-page }}</a></h3>
+    </div>
+    
 
 
 

@@ -1,9 +1,12 @@
 ---
 layout: portfolio-page
 title: Portfolio Website
+subtitle: Building my personal portfolio
 parent-page: design
 main-page: Design
 ---
+
+![Final design](/css/images/currentdesign.png)
 
 What a journey it was to build this website! 
 
@@ -68,6 +71,8 @@ Time to deploy and share with the world!
 I started with a redesign of the About page. This time, I drew my wireframes in Sketch.
 
 ![About page](/css/images/aboutwireframe.png)
+
+## Conclusions
 
 <strong>Changes are still ongoing.</strong> I'm collecting feedback and researching like crazy to make the website better. Stay tuned!
 

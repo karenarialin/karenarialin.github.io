@@ -85,7 +85,6 @@ h4 {
 
 
 img {
-/*    max-height: 100%;*/
     max-width: 100%;
     margin: 20px 0px;
 }
@@ -96,10 +95,6 @@ footer {
     padding: 20px 4px;
     bottom: 0;
     display: block;
-/*
-    background: url(images/waterfall.gif);
-    background-size: cover;
-*/
     text-align: center;
     background-color: #B8F39D;
 }
@@ -124,15 +119,8 @@ ul {
 .body-container {
     position: relative;
     height: 100%;
-/*    border: 1px solid blue;*/
     top: 0;
     left: 0;
-/*
-    background-image: url(images/waterfall.JPG);
-    opacity: 0.1;
-    background-size: cover;
-    
-*/
     
 }
 
@@ -314,7 +302,7 @@ a:active {
 }
 
 .work-1, .work-5 {
-    background-color:  #FAF995;
+    background-color:  #AEDBFB;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -446,7 +434,6 @@ small {
 }
 
 .dropdown-content {
-/*    display: none;*/
     position: absolute;
     background-color: rgba(255, 255, 255, 1);
     min-width: 100px;

@@ -1,6 +1,7 @@
 ---
 layout: portfolio-page
 title: Logo Design
+subtitle: Designing a logo to represent me
 parent-page: design
 main-page: Design
 ---
